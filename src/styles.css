@@ -1,0 +1,39 @@
+.App {
+  height: 40rem;
+  width: 60rem;
+  background-color: azure;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1%;
+  display: flex;
+  justify-content: center;
+}
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cecfce;
+}
+@media only screen and (max-width: 1050px) {
+  .App {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .App {
+    width: 27rem;
+  }
+}
+@media only screen and (min-height: 1050px) {
+  .App {
+    height: 30rem;
+  }
+}
+@media only screen and (max-height: 560px) {
+  .App {
+    height: 25rem;
+  }
+}

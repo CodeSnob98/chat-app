@@ -1,0 +1,134 @@
+.chat-main {
+  flex-grow: 1;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chat-header {
+  padding: 1.5rem;
+  background-color: rgb(111, 98, 226);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border-top-right-radius: 7px;
+}
+.user-main {
+  flex-grow: 1;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chat-body {
+  height: 70%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.user-header {
+  padding: 1.5rem;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(18, 65, 194);
+}
+.user-body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.many {
+  width: 100px;
+  height: 100px;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(175, 175, 235);
+}
+.footer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.footer-header-text {
+  width: 100%;
+  color: blue;
+  display: flex;
+  justify-content: flex-start;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+.line {
+  margin-left: 0.4rem;
+  width: 80%;
+  height: 2px;
+  background-color: blue;
+}
+.input-field {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inp {
+  height: 2rem;
+  flex-grow: 0.9;
+  border: none;
+}
+.btn-2 {
+  background-color: white;
+  color: blue;
+  padding: 0.5rem 1rem;
+  border: none;
+  border: 2px solid blue;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-2:hover {
+  background-color: rgb(143, 201, 235);
+}
+.send-icon {
+  margin-left: 0.2rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.empy-chat-box {
+  position: absolute;
+  left: 68%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(18, 65, 194);
+}

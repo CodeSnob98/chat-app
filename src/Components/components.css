@@ -1,0 +1,60 @@
+.chat-card-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: top;
+  margin: 1rem;
+  max-width: 50%;
+}
+.chat-card-main-user {
+  margin: 1rem;
+  max-width: 50%;
+  position: relative;
+  left: 70%;
+  transform: translate(-50%);
+}
+.chat-icon {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.card-text {
+  padding: 0.5rem;
+  background-color: aqua;
+  color: blue;
+  max-width: 95%;
+  border-radius: 10px;
+  word-wrap: break-word;
+  /* display: inline-block; */
+}
+.user-card-text {
+  padding: 0.5rem;
+  color: blue;
+  width: 90%;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-card-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 1rem 1rem 1rem 0;
+  padding-left: 0.2rem;
+  max-width: 100%;
+  cursor: pointer;
+  border-left: 5px solid blue;
+}
+.user-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 1rem 1rem 1rem 0;
+  padding-left: 0.2rem;
+  max-width: 100%;
+  cursor: pointer;
+  border-left: 5px solid white;
+}
