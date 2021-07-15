@@ -7,12 +7,27 @@ import { addUser, fetchUser, addChats, openChats } from "./../Store/actions";
 Modal.setAppElement("#root");
 function Usercontainer(props) {
   const [modal, setModal] = React.useState(false);
+  const addUserRef = React.useRef("");
   function clickToOpen(id) {
     props.openChats({ id });
   }
   React.useEffect(() => {
     props.fetchUser();
   }, []);
+
+  function addUserFunction() {
+    if (addUserRef.current.value.trim()) {
+      let newUser = {
+        id: props.user.length + 1,
+        name: addUserRef.current.value.trim(),
+        clicked: false,
+        chats: []
+      };
+      props.addUser(newUser);
+    }
+
+    setModal(!modal);
+  }
   return (
     <>
       <Modal
@@ -33,8 +48,9 @@ function Usercontainer(props) {
           }
         }}
       >
-        <input type="text" />
-        <button className="btn" onClick={() => setModal(!modal)}>
+        <div className="add-user-header">Add new user</div>
+        <input className="add-user-input" ref={addUserRef} type="text" />
+        <button className="btn" onClick={addUserFunction}>
           Submit
         </button>
       </Modal>

@@ -53,9 +53,9 @@
 .btn {
   background-color: blue;
   color: white;
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: none;
-  border-radius: 10%;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 .btn:hover {
@@ -127,6 +127,19 @@
   border-radius: 1%;
   font-weight: 500;
   font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(18, 65, 194);
+}
+.add-user-input {
+  height: 1.5rem;
+  width: 15rem;
+}
+.add-user-header {
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   color: rgb(18, 65, 194);
 }
