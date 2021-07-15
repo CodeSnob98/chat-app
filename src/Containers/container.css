@@ -26,8 +26,6 @@
   height: 70%;
   width: 100%;
   overflow: auto;
-  display: flex;
-  flex-direction: column;
 }
 .user-header {
   padding: 1.5rem;
