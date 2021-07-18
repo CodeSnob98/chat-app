@@ -17,7 +17,7 @@
 ::-webkit-scrollbar-thumb {
   background: #cecfce;
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1254px) {
   .App {
     width: 35rem;
   }
@@ -32,7 +32,7 @@
     height: 30rem;
   }
 }
-@media only screen and (max-height: 560px) {
+@media only screen and (max-height: 640px) {
   .App {
     height: 25rem;
   }
